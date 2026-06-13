@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Realty - Luxury & Family Homes</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #2d3748;
+        }
+
+        header {
+            background-color: #1a202c;
+            color: #ffffff;
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 0 0 1.5rem 0;
+            color: #cbd5e0;
+            font-size: 1.1rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #d69e2e;
+            color: #1a202c;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        h2 {
+            color: #1a202c;
+            border-bottom: 3px solid #d69e2e;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .listings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .property-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s;
+        }
+
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .property-details {
+            padding: 1.5rem;
+        }
+
+        .property-details h3 {
+            margin: 0 0 0.5rem 0;
+            color: #2b6cb0;
+        }
+
+        .price {
+            font-size: 1.4rem;
+            color: #d69e2e;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .specs {
+            display: flex;
+            gap: 15px;
+            color: #718096;
+            font-size: 0.9rem;
+            margin: 1rem 0;
+        }
+
+        .view-btn {
+            background-color: #1a202c;
+            color: white;
+            border: none;
+            padding: 0.8rem 1rem;
+            border-radius: 0 0 8px 8px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+
+        .view-btn:hover {
+            background-color: #2b6cb0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #1a202c;
+            color: #ffffff;
+            margin-top: 5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Apex Realty</h1>
+        <p>Find your place to call home.</p>
+        <nav>
+            <a href="index.html">Current Listings</a>
+            <a href="about.html">Our Vision</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Featured Properties</h2>
+        
+        <div class="listings-grid">
+            <div class="property-card">
+                <div class="property-details">
+                    <h3>The Willow Modern</h3>
+                    <p><strong>Location:</strong> 742 Evergreen Terrace</p>
+                    <p class="price">$450,000</p>
+                    <p>A stunning contemporary home featuring an open floor plan, floor-to-ceiling windows, and a sleek chef's kitchen.</p>
+                    <div class="specs">
+                        <span>3 Beds</span> • <span>2.5 Baths</span> • <span>2,400 sqft</span>
+                    </div>
+                </div>
+                <button class="view-btn">Schedule a Viewing</button>
+            </div>
+
+            <div class="property-card">
+                <div class="property-details">
+                    <h3>Sunset Cascade Estate</h3>
+                    <p><strong>Location:</strong> 1048 Ocean Vista Blvd</p>
+                    <p class="price">$1,250,000</p>
+                    <p>Experience luxury living with panoramic coast views, an infinity pool, and an expansive outdoor entertainment deck.</p>
+                    <div class="specs">
+                        <span>5 Beds</span> • <span>4.5 Baths</span> • <span>4,800 sqft</span>
+                    </div>
+                </div>
+                <button class="view-btn">Schedule a Viewing</button>
+            </div>
+            
+            <div class="property-card">
+                <div class="property-details">
+                    <h3>Charming Craftsman</h3>
+                    <p><strong>Location:</strong> 553 Maple Court</p>
+                    <p class="price">$325,000</p>
+                    <p>A beautifully restored historic home with original hardwood floors, a cozy fireplace, and a spacious wrap-around porch.</p>
+                    <div class="specs">
+                        <span>3 Beds</span> • <span>2 Baths</span> • <span>1,850 sqft</span>
+                    </div>
+                </div>
+                <button class="view-btn">Schedule a Viewing</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Apex Realty. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
